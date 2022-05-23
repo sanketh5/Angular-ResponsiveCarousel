@@ -1,0 +1,12 @@
+<div id="heading">
+  Carousel
+</div>
+<div class="carousel-outer" >
+  <carousel class="row" [cellsToShow]=nos [cellsToScroll]=nos  [margin]=20 [height]=240 >
+    <div class="col-md-1 carousel-cell" *ngFor="let src of list_of_images,let i = index" [ngClass]="{'first-item': i == 0 || i%nos == 0, 'last-item': i != 0 && i%(nos-1) == 0}">
+      <div class="grid-box">
+        <img class="image" [src]="'assets/images/'+src" alt="image">
+      </div>
+    </div>
+  </carousel>
+</div>

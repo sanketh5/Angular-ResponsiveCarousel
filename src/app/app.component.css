@@ -1,0 +1,56 @@
+#heading {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.carousel-outer {
+    padding: 0 0 50px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.carousel-cell {
+    overflow: visible !important;
+    z-index: 9 !important;
+}
+.carousel-cell:hover{
+    z-index: 999 !important;
+}
+
+.grid-box {
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+}
+
+.grid-box:hover{
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
+    transform-origin: center top;
+    border-radius: 5px;
+}
+
+.image {
+    width: 100%;
+    border-radius: 5px;
+    height: 165px ;
+}
+
+
+.first-item .grid-box:hover{
+    transform-origin: left top;
+}
+
+.last-item .grid-box:hover{
+    transform-origin: right top;
+}
